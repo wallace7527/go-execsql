@@ -1,10 +1,11 @@
 
-编译
+### 编译
 go build -o go-execsql.exe
 
 
-配置文件说明
+### 配置文件说明
 
+```shell
 ;配置文件与可执行程序同名、同文件夹
 ;例如: go-execsql.exe 的配置文件为go-exesql.ini
 
@@ -30,6 +31,6 @@ SQL=delete from address_log where address='0x11111111111111111111111111111111'
 ;如果事务模式，将产生回滚，所有SQL执行结果被取消
 ;非事务模式，错误被忽略继续执行
 ;SQL=delete from address_log2 where address='0x11111111111111111111111111111111' ;table address_log2 doesn't exist
-
+```
 
 wanglei.ok@foxmail.com
