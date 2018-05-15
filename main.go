@@ -20,7 +20,12 @@ package main
 import (
 	"log"
 	"time"
+	"github.com/wanglei-ok/logfile"
 )
+
+func init() {
+	logfile.Setup()
+}
 
 func main() {
 
